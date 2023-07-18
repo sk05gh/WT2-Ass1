@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solskyy</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <!--bulma framework-->
+    <link rel="stylesheet" href="css/bulma.min.css" type="text/css">
+    <!--accordion framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/css/bulma-accordion.min.css" type="text/css">
+    <!--animate css-->
+    <link rel="stylesheet" href="css/cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.css"/>
+    <!-- customize css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+
+</head>
+<body>
+<!-- HERO SECTION STARTS -->
+
+<section class="hero is-fullheight">
+    <div class="container">
+        <div class="video-button">
+            <a class="popup-video"></a>
+        </div>
+        <div class="modal" id="model-video">
+            <video width="560" height="415" controls autoplay>
+                <source src="https://www.youtube.com/watch?v=4Q2sIumx0jU">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h1 class="has-text-centered head-hero has-text-white">Let's Create Your <span class="highlight">Ideas</span>
+        </h1>
+        <p class="subtitle is-3 has-text-centered has-text-white text-hero">Your business our solution </p>
+        <div class="has-text-centered"><a href="#nav" class="smooth-scroll">
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </a></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+        <script>
+
+            VANTA.NET({
+                el: ".hero",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 100.00,
+                minWidth: 10.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x859ce8,
+                backgroundColor: 0x17121c,
+                points: 20.00,
+                maxDistance: 17.00,
+                spacing: 17.00
+            })
+        </script>
+    </div>
+</section>
+
+<!-- HERO SECTION ENDS -->
+
+<!--NAVBAR STARTS-->
+<nav id="nav" class="navbar nav-sec" role="navigation" aria-label="main navigation" >
+    <div class="navbar-brand">
+        <a href="#">
+            <img alt="nav-logo" src="images/finalbluevariant.svg" class="logo-img mt-2" id="nav-logo">
+            <h1 class="has-text-white is-size-1 nav-head" id="nav-heading" style="margin: 10px -88px ;">SOLSKYY</h1>
+        </a>
+    </div>
+
+
+    <div class="navbar-end navbar-sec">
+
+        <a class="navbar-item has-text-white mr-4 is-size-5 nav-visible" href="about-us.html">
+            About Us
+        </a>
+        <a class="navbar-item has-text-white mr-4 is-size-5 nav-visible" href="career.html">
+            Career
+        </a>
+        <a class="navbar-item has-text-white mr-4 is-size-5 nav-visible" href="how-we-work.html">
+            How we work
+        </a>
+        <a class="icon has-text-white ml-6 nav-ham is-size-5" id="nav-button" onclick="onBtnClk()">
+            <i id="nav-icon" class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+    </div>
+
+<section class="accordions" id="nav-effect" >
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>About Us </p>
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" >
+                        <span  class="nav-btn">How we work </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>Career</p>
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" aria-haspopup="true"  aria-controls="dropdown-menu">
+                        <span class="nav-btn">How we work</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>Blog</p>
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="nav-btn">How it Works</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>Services</p>
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="nav-btn">How it Works</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>Portfolio</p>
+
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="nav-btn">How it Works</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>Insights</p>
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="nav-btn">How it Works</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>Contact</p>
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="nav-btn">How it Works</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="accordion blog-btn ">
+        <div class="accordion-header toggle nav-sec ">
+            <p>How we work</p>
+            <button style="background-color: unset">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="accordion-body">
+            <div class="accordion-content">
+                <div >
+                    <button class="button sub-menu mt-3" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span class="nav-btn">How it Works</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <button class="button  has-text-white is-inverted cta-btn" onclick="popup_show()">CTA</button>
+    </div>
+    <div class="modal" id="popup"> <!-- To acivate the popup use "is-active" class after model -->
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <section class="modal-card-body">
+                <div class="container">
+                    <button class="delete is-small" id="close-btn" onclick="popup_close()"></button>
+                    <img src="images/popupimg1.svg" class="popup-img">
+                    <div>
+                        <input class="input is-dark form-widt " type="text" placeholder="NAME">
+                        <input class="input is-dark mt-3 form-widt" type="text" placeholder="CONTACT">
+                        <div class="field">
+                            <div class="control mt-3">
+                                <input class="input is-dark form-widt" type="email" placeholder="EMAIL">
+                            </div>
+                        </div>
+                        <button class="button has-text-white popup-btn">Get Started</button>
+                        <h2 class="popup-text">Get <span class="color-btn">20%</span><br>off on your<br>First Order.</h2>
+                        <hr class="popup-line">
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+    <div class="modal" id="popup2"> <!-- To acivate the popup use "is-active" class after model -->
+        <div class="modal-background"></div>
+        <div class="modal-card ">
+            <section class="modal-card-body popup2-back">
+                <button class="delete is-small" id="close-btn" onclick="popup2_close()"></button>
+                <div>
+                    <h1 class="popup2-head has-text-white">STAY AHEAD!</h1>
+                    <h3 class="popup2-text has-text-white">Offers | News | Blogs</h3>
+                </div>
+                <div>
+                    <div class="field popup2-align">
+                        <div class="control mt-3">
+                            <input class="input has-text-dark popup2-form" type="email" placeholder="EMAIL">
+                        </div>
+                    </div>
+                    <button class="button has-text-white popup2-btn">Subscribe</button>
+                </div>
+                <div>
+                    <img src="images/Email campaign-amico 3.svg" alt="" class="popup2-img">
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+</section>
+</nav>
+
+<!--NAVBAR ENDS-->
+
+
+<!-- section start-->
+<section class="image">
+    <img alt="career-image " class="is-fullwidth privacy-pol-image" src="images/businessman-logging-his-tablet-01.jpeg" >
+</section>
+<section class="section has-background-white">
+    <div class="container">
+        <h1 class="has-text-centered career-h1">Are you ready to <span style="color: #04198b"> join our team</span> </h1>
+    </div>
+    <div class="columns">
+        <div >
+            <h1><i> We're Hiring</i></h1><br>
+            <p >The Company has the discretion to update this Privacy Policy at any time. When it does, the updated date at the bottom of this page will be revised. Users are encouraged to check this page frequently for any changes to stay informed about how the Company is helping to protect.</p>
+        </div>
+        <div>
+            <img src="images/popupimg1.svg" style="height: 200px; width: 600px;">
+        </div>
+    </div>
+    <h2><i>Current Openings </i><i class="fa fa-angle-down" aria-hidden="true"></i></h2>
+
+    <div class="columns is-mobile">
+        <div class="column column-for-mob">
+            <div class="card" style="display: none;">
+                <div class="card-content">
+                    <div class="content">
+                        <div><i class="fa fa-star-o" aria-hidden="true"></i><p>Associate developer </p>
+                        </div>
+                        <hr>
+                        <h3>Job Description -</h3>
+                        <p>abcdefhfoefh <br> bdawbdbuduibdiu <br> adawdadaad <br> besdfasfasf <br></p>
+                        <button class="button ">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column column-for-pc-left ">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div><i class="fa fa-star-o" aria-hidden="true"></i><p>Associate developer </p>
+                        </div>
+                        <hr>
+                        <h3>Job Description -</h3>
+                        <p>abcdefhfoefh <br> bdawbdbuduibdiu <br> adawdadaad <br> besdfasfasf <br></p>
+                        <button class="button ">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column column-for-pc-right">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div><i class="fa fa-star-o" aria-hidden="true"></i><p>Associate developer </p>
+                        </div>
+                        <hr>
+                        <h3>Job Description -</h3>
+                        <p>abcdefhfoefh <br> bdawbdbuduibdiu <br> adawdadaad <br> besdfasfasf <br></p>
+                        <button class="button ">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER STARTS-->
+
+<footer class="footer footer-sec is-fullheight">
+    <div class="foot-head">
+        <img src="images/whitevariant.svg" alt="" style="height: 75px; width: 180px;">
+        <p class=" is-size-2 has-text-white foot-heading">SOLSKYY</p>
+        <div class="icons">
+            <i class="fa fa-instagram mr-5 is-size-2 has-text-white mt-5 ig-icon"></i>
+            <i class="fa fa-facebook-square mr-5 is-size-2 has-text-white mt-5 " aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square mr-5 is-size-2 has-text-white mt-5 linkd-icon" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play mr-5 is-size-2 has-text-white mt-5 yout-icon" aria-hidden="true"></i>
+        </div>
+    </div>
+    <hr class="line-btw">
+    <ul class="footer-list mt-4">
+        <li class="ml-6 mr-6 is-size-5 "><a href="blog.html" class="has-text-white">Blog</a></li>
+        <li class="ml-6 mr-6 is-size-5"><a href="pricing.html" class="has-text-white">Pricing</a></li>
+        <li class="ml-6 mr-6 is-size-5"><a href="career.html" class="has-text-white">Career</a></li>
+        <li class="ml-6 mr-6 is-size-5"><a href="disclaimer.html" class="has-text-white">Disclaimer</a></li>
+        <li class="ml-6 mr-6 is-size-5"><a href="privacy-policy.html" class="has-text-white">Privacy Policy</a></li>
+    </ul>
+
+
+    <div class="columns mob-tab-logo">
+        <img src="images/whitevariant.svg" class="is-5 column footer-logo" alt="" style="height: 75px; width: 180px;">
+        <h3 class="is-size-3 has-text-white  column footer-solskyy">SOLSKYY</h3>
+    </div>
+
+    <div class="footer-copyright ">
+        <p class="footer-date has-text-white is-justify-content-flex-end ">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            . All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<!--FOOTER ENDS HERE-->
+
+<script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/js/bulma-accordion.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

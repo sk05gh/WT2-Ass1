@@ -1,0 +1,63 @@
+
+.parent {
+position: relative;
+}
+.text{
+  position: fixed;
+  z-index: 1;
+  margin-top: 31px;
+}
+
+
+.overlay {
+position: absolute;
+top:0px;
+left: 0px;
+
+padding: 0px;
+z-index: 1;
+}
+
+
+h6 {
+  font-weight: 400;
+  font-family: 'poppins', sans-serif;
+  color: black;
+}
+
+p {
+  font-family: 'Poppins',sans-serif;
+  color: #000;
+}
+
+/* hero section starts */
+
+  
+  .curved-text {
+    display: inline-block;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+  
+
+   .head-hero{
+    font-size: 90px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 70px;
+    margin-left: 123px;
+    margin-top: 232px!important;
+   }
+  
+    .portfolio-freepik{
+      position: relative;
+    z-index: 1;
+    margin-left: 70%;
+    margin-top: -317px;
+    height: 352px;
+    margin-right: 10%;
+
+    }
+    
+   
+
+   
